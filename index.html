@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Мой тёмный лендинг</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+/* Сброс и базовые стили */
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Montserrat', sans-serif; background:#121212; color:#eee; }
+
+/* Шапка */
+header {
+  background:#1f1f1f;
+  text-align:center;
+  padding:100px 20px;
+}
+header h1 { font-size:3rem; color:#ff6f61; margin-bottom:10px; animation:fadeInDown 1s ease forwards; }
+header p { font-size:1.2rem; color:#ccc; animation:fadeInUp 1s ease forwards; animation-delay:0.5s; }
+
+/* Кнопка главного действия */
+.btn-primary {
+  padding:15px 35px;
+  font-size:1.2rem;
+  background:#ff6f61;
+  border:none;
+  border-radius:50px;
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+  box-shadow:0 5px 15px rgba(255,111,97,0.4);
+  margin-top:30px;
+}
+.btn-primary:hover {
+  transform:translateY(-3px);
+  box-shadow:0 10px 20px rgba(255,111,97,0.6);
+}
+
+/* Секции */
+section {
+  padding:80px 20px;
+  text-align:center;
+}
+section h2 {
+  font-size:2rem;
+  margin-bottom:40px;
+  color:#ff6f61;
+}
+
+/* О себе */
+.about p { max-width:700px; margin:0 auto 20px; font-size:1.1rem; line-height:1.6; color:#ccc; }
+
+/* Портфолио */
+.portfolio { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; }
+.portfolio-item {
+  background:#1f1f1f; border-radius:15px; padding:20px;
+  width:250px; box-shadow:0 5px 15px rgba(0,0,0,0.5); transition:0.3s;
+}
+.portfolio-item:hover { transform:translateY(-5px); box-shadow:0 10px 25px rgba(0,0,0,0.7); }
+.portfolio-item img { width:100%; border-radius:10px; margin-bottom:15px; }
+.portfolio-item h3 { font-size:1.2rem; color:#fff; margin-bottom:5px; }
+.portfolio-item p { font-size:0.95rem; color:#bbb; }
+
+/* Контакты */
+.contact p { font-size:1.1rem; color:#ccc; margin-bottom:20px; }
+.contact .btn-primary { margin-top:0; }
+
+/* Футер */
+footer { background:#111; color:#888; text-align:center; padding:20px; font-size:0.9rem; }
+
+/* Анимации */
+@keyframes fadeInDown { 0% { opacity:0; transform:translateY(-20px);} 100% { opacity:1; transform:translateY(0); } }
+@keyframes fadeInUp { 0% { opacity:0; transform:translateY(20px);} 100% { opacity:1; transform:translateY(0); } }
+
+/* Адаптивность */
+@media (max-width:768px) {
+  header h1 { font-size:2.2rem; }
+  section h2 { font-size:1.5rem; }
+  .portfolio-item { width:90%; }
+  .btn-primary { width:80%; font-size:1rem; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Привет, я Создатель</h1>
+  <p>Это современный тёмный адаптивный лендинг, который выглядит круто на всех устройствах.</p>
+  <button class="btn-primary" onclick="alert('Привет!')">Связаться со мной</button>
+</header>
+
+<section class="about">
+  <h2>Обо мне</h2>
+  <p>Я создаю современные сайты и веб-приложения с красивым дизайном. Люблю минимализм, удобство и адаптивность. Этот лендинг показывает мои навыки в действии.</p>
+</section>
+
+<section class="portfolio">
+  <h2>Мои проекты</h2>
+  <div class="portfolio-item">
+    <img src="https://via.placeholder.com/250x150" alt="Проект 1">
+    <h3>Проект 1</h3>
+    <p>Краткое описание проекта или задачи.</p>
+  </div>
+  <div class="portfolio-item">
+    <img src="https://via.placeholder.com/250x150" alt="Проект 2">
+    <h3>Проект 2</h3>
+    <p>Краткое описание проекта или задачи.</p>
+  </div>
+  <div class="portfolio-item">
+    <img src="https://via.placeholder.com/250x150" alt="Проект 3">
+    <h3>Проект 3</h3>
+    <p>Краткое описание проекта или задачи.</p>
+  </div>
+</section>
+
+<section class="contact">
+  <h2>Контакты</h2>
+  <p>Свяжитесь со мной для обсуждения проектов или сотрудничества.</p>
+  <button class="btn-primary" onclick="alert('Спасибо!')">Написать</button>
+</section>
+
+<footer>
+  &copy; 2026 Мой тёмный лендинг
+</footer>
+
+</body>
+</html>
